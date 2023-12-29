@@ -1,134 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initail-scale=1.0">
-		<title>Nike UA</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Money</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/icon.png"/>
+</head>
 
-		<header>
-			<nav class="navbar">
-				<div class="navbar-container">
-					<div class="navbar-logo">
-						<img src="./img/NKLogo.png" alt="NIKE UA">
-					</div>
-					<ul class="navbar-nav-left">
-						<li><a href="#">Men</a></li>
-						<li><a href="#">Women</a></li>
-						<li><a href="#">Sale</a></li>	
-					</ul>
-					<ul class="navbar-nav-right">
-						<li><a href="#">
-							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-							viewBox="0 0 321.883 321.883" style="enable-background:new 0 0 321.883 321.883;" xml:space="preserve">
-					   		<path d="M160.941,0c-69.035,0-125,55.964-125,125.001c0,69.035,85.187,196.882,125,196.882c39.813,0,125-127.847,125-196.882
-						   	C285.941,55.964,229.977,0,160.941,0z M160.941,182.294c-36.341,0-65.801-29.46-65.801-65.802c0-36.34,29.46-65.801,65.801-65.801
-						   	c36.341,0,65.801,29.461,65.801,65.801C226.742,152.834,197.282,182.294,160.941,182.294z"/>
-							</svg>
-							Find a store</a></li>
-						<Li><button class="btn btn-dark-outline">Sign in</button></Li>
-						<Li><button class="btn btn-dark">Join now</button></Li>
-					</ul>
-					<button class="hamburger" id="menu-button">
-						<span class="hamburger-top"></span>
-						<span class="hamburger-middle"></span>
-						<span class="hamburger-bottom"></span>
-					</button>
-				</div>
-			</nav>
-		</header>
+<body>
+    <div class="container">
+        <form method="post" action="https://script.google.com/macros/s/AKfycbxWmqE_sJ5PiojcRUCo0TVUZK-SDlvqivqLUKeBkSt4zf-hvQaZcz2FE6k-QReZvqjT/exec" 
+        name="contact-form">
+            <h4><a href="/Leading Personal/index.html">Money</a></h4>
+            <input type="date" name="Дата" placeholder="date" value="2024-01-01" />
+            <select name="Тип операції">
+                <option value="Заробітня плата">Заробітна плата</option>
+                <option value="Премія">Премія</option>
+                <option value="Обмін долл на грн">Обмін долл на грн</option>
+                <option value="МОНО чорна">МОНО чорна</option>
+                <option value="МОНО біла">МОНО біла</option>
+                <option value="ПУМБ">ПУМБ</option>
+                <option value="Готівка">Готівка</option>
+                <option value="Ресторани">Ресторани</option>
+                <option value="Інвестиції">Інвестиції</option>
+                <option value="Рахунок №1">Рахунок №1</option>
+                <option value="Рахунок №2">Рахунок №2</option>
+                <option value="Рахунок №3">Рахунок №3</option>
+            </select>
+            <input type="text" name="Сума" placeholder="Сума">
+            <select name="Валюта">
+                <option value="долл">долл</option>
+                <option value="грн">грн</option>
+            </select>
+            <select name="Тип операції2">
+                <option value="Заробітня плата">Заробітна плата</option>
+                <option value="Премія">Премія</option>
+                <option value="Обмін долл на грн">Обмін долл на грн</option>
+                <option value="МОНО чорна">МОНО чорна</option>
+                <option value="МОНО біла">МОНО біла</option>
+                <option value="ПУМБ">ПУМБ</option>
+                <option value="Готівка">Готівка</option>
+                <option value="Ресторани">Ресторани</option>
+                <option value="Інвестиції">Інвестиції</option>
+                <option value="Рахунок №1">Рахунок №1</option>
+                <option value="Рахунок №2">Рахунок №2</option>
+                <option value="Рахунок №3">Рахунок №3</option>
+            </select>
+            <input type="text" name="Сума2" placeholder="Сума2">
+            <select name="Валюта2">
+                <option value="долл">долл</option>
+                <option value="грн">грн</option>
+            </select>
+            <textarea name="Коментар" rows="7" placeholder="Коментар"></textarea>
+            <input type="submit" value="submit" id="submit">
+        </form>
+    </div>
+    
+    <script src="Sheet.js"></script>
 
-		<div class="mobile-menu hidden" id="menu">
-			<ul>
-				<li><a href="">Menu</a></li>
-				<li><a href="">Rewards</a></li>
-				<li><a href="">Gift Cards</a></li>
-			</ul>
-			<div class="monile-menu-bottom">
-				<button class="btn btn-dark-outline">Sign in</button>
-				<button class="btn btn-dark">Join now</button>
-				<div>
-					<a href="#">
-						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-							viewBox="0 0 321.883 321.883" style="enable-background:new 0 0 321.883 321.883;" xml:space="preserve">
-					   		<path d="M160.941,0c-69.035,0-125,55.964-125,125.001c0,69.035,85.187,196.882,125,196.882c39.813,0,125-127.847,125-196.882
-						   	C285.941,55.964,229.977,0,160.941,0z M160.941,182.294c-36.341,0-65.801-29.46-65.801-65.802c0-36.34,29.46-65.801,65.801-65.801
-						   	c36.341,0,65.801,29.461,65.801,65.801C226.742,152.834,197.282,182.294,160.941,182.294z"/>
-						</svg>
-						<span>Find a store</span>
-					</a>
-				</div>
-			</div>
+</body>
 
-
-
-		</div>
-
-
-		<main>
-			<section class="card bg-primary text-center py-md">
-				<div class="card-content">
-					<h2 class="text-lg">Your favirite sport clothes</h2>
-					<p2 class="text-md">
-						Join Nike Program Rewards for sales, news & exclusive offers.
-						<a href="#">Learn more</a>
-					</p2>
-				</div>
-			</section>
-
-			<section class="card bg-secondary grid-col-2">
-				<img src="./img/layot.jpg" alt="">
-				<div class="card-info">
-					<h2 class="text-lg">Be part of us</h2>
-					<p class="text-md">Join to our team. We're looking for new specialsit.</p>
-					<a href="#" class="btn btn-light-outline">Learn more</a>
-				</div>
-			</section>
-
-			<section class="card bg-primary grid-col-2 grid-reversed">
-				<img src="./img/gg.jpg" alt="">
-				<div class="card-info">
-					<h2 class="text-lg">Team work</h2>
-					<p class="text-md">
-						Learn how to train in a team. Be more productive. Compatetive.
-					</p>
-					<a href="#" class="btn btn-light-outline">Learn more</a>
-				</div>
-			</section>
-		</main>
-
-		<div class="divider"></div>
-
-		<footer class="footer">
-			<div class="footer-conteiner">
-				<div class="social">
-					<a target="_blank_" href="https://www.spotify.com/">
-					<img src="./svg/spotify.svg" alt="spotify">
-					</a>
-					<a target="_blank_" href="https://uk-ua.facebook.com">
-					<img src="./svg/facebook.svg" alt="facebook">
-					</a>
-					<a target="_blank_" href="https://www.pinterest.com">
-					<img src="./svg/pinterest.svg" alt="pinterest">
-					</a>
-					<a target="_blank_" href="https://www.instagram.com">
-					<img src="./svg/instagram.svg" alt="instagram">
-					</a>
-					<a target="_blank_"href="https://www.youtube.com">
-					<img src="./svg/youtube.svg" alt="youtube">
-					</a>
-					<a target="_blank_" href="https://twitter.com">
-					<img src="./svg/twitter.svg" alt="twitter">
-					</a>
-				</div>
-					<p>© 2022 NikeUA Sport Company. All rights reserved.</p>
-			</div>
-		</footer>
-
-		<script src="./script.js"></script>
-
-	</body>
 </html>

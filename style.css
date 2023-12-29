@@ -1,346 +1,62 @@
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap);
-
-:root {
-    --color-primary: #b29d58;
-    --color-secondary: #A48D72;
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    background: linear-gradient(108deg, rgb(156, 255, 75), #eb59eb);
 }
-/*...*/
-
-body {
-    font-family: 'Open Sans', sans-serif;
+.container{
+	width: 500px;
+	padding: 30px;
+	border: 1px solid #eeeeee;
+	border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
 }
-
-ul {
-    list-style: none;
+h4{
+	margin-bottom: 10px;
+	font-size: 24px;
+	color: white;
 }
-
-a {
-    color: #000;
+a{
+	margin-bottom: 10px;
+	font-size: 24px;
+	color: white;
+	text-decoration:none;
 }
-
-section a {
-    color: #fff;
+input{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	color: #333333;
+	font-size: 18px;
 }
-
-svg {
-    fill: currentColor;
+select { 
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
 }
-
-img {
-    max-width: 100%;
+textarea{
+	width: 100%;
+	padding: 10px;
 }
-
-.navbar {
-    width: 100%;
-    height: auto;
-    background-color: #fff;
-    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
-    0 0 2px rgb(0 0 0 / 7%);
-    padding: 20px;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 20px;
+#submit{
+	border: none;
+	background-color: orangered;
+	color: white;
+	margin-top: 10px;
+	border-radius: 5px;
 }
-
-.navbar a {
-    text-decoration: none;
-    font-weight: bold;
+#submit:hover{
+	background-color: #333333;
 }
-
-.navbar a:hover {
-    color: var(--color-primary);
-}
-
-.navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-.navbar-nav-left {
-    flex-grow: 1;
-    margin-left: 20px;
-    text-transform: uppercase;
-}
-
-.navbar li:not(:first-child) {
-    margin-left: 20px;
-}
-
-.navbar-logo img{
-    width: 100px;
-}
-
-.navbar ul {
-    display: flex;
-}
-
-.navbar-nav-right li:first-child a {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-nav-right li svg{
-    width: 30px;
-}
-
-.navbar-nav-right button{
-    font-weight: bold;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #fff;
-    padding: 7px 12px;
-    border: 2px solid #000;
-    border-radius: 50px;
-    line-height: 1.2;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.btn-dark-outline {
-    background-color: #fff;
-    color: #000;
-}
-
-.btn-dark-outline:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-.btn-light-outline {
-    border-color: #fff;
-    color: #fff;
-    background-color: transparent;
-}
-
-.btn-dark {
-    background-color: #000;
-    color: #fff;
-}
-
-.btn-dark:hover {
-    background-color: #333;
-}
-
-.card {
-    margin-bottom: 30px;
-}
-
-.bg-primary {
-    background-color: var(--color-primary);
-    color: #fff;
-}
-
-.bg-secondary {
-    background-color: var(--color-secondary);
-    color: #fff;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.card-content {
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.grid-col-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.grid-reversed :first-child {
-    order: 1;
-}
-
-.card-info {
-    justify-self: center;
-    text-align: center;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.card-info a {
-    text-decoration: none;
-}
-
-.divider {
-    width: 95%;
-    background-color: #ccc;
-    height: 2px;
-    margin: 0 auto;
-}
-
-.footer-container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.social {
-    display: flex;
-    margin: 20px 0;
-}
-
-.social a {
-    margin: 0 15px;
-}
-
-.social img {
-    width: 35px;
-    height: 35px;
-}
-
-.text-lg {
-    font-size: 50px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    line-height: 1.4;
-}
-
-.text-md {
-    font-size: 24px;
-    line-height: 1.7;
-    margin-bottom: 20px;
-}
-
-.py-md {
-    padding: 20px;
-}
-
-.hamburger {
-    width: 24px;
-    height: 24px;
-    background: none;
-    border: none;
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 10;
-    display: none;
-}
-
-.hamburger-top, 
-.hamburger-middle, 
-.hamburger-bottom {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background: #000;
-    transform: rotate(0);
-    transition: all 0.5s;
-}
-
-.hamburger-middle {
-    transform: translateY(7px);
-}
-
-.hamburger-bottom {
-    transform: translateY(14px);
-}
-
-.open .hamburger-top {
-    transform: rotate(45deg) translateY(6px) translateX(6px);
-}
-
-.open .hamburger-middle {
-    display: none;
-}
-
-.open .hamburger-bottom {
-    transform: rotate(-45deg) translateY(6px) translateX(-6px);
-}
-
-.mobile-menu {
-    position: fixed;
-    top: 81px;
-    right: 0;
-    width: 90%;
-    height: 100%;
-    background-color: #fff;
-    color: #000;
-    padding: 30px;
-    box-shadow: inset 0 4px 3px -3px rgb(0 0 0 / 10%), 
-        inset 0 4px 2px -2px rgb(0 0 0 / 7%);
-    transition: all 0.3s;
-}
-
-.mobile-menu ul {
-    line-height: 3;
-    border-bottom: #777 solid 1px;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-}
-
-.mobile-menu a {
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.mobile-menu a:hover {
-    color: var(--color-primary);
-}
-
-.mobile-menu div {
-    margin-top: 20px;
-}
-
-.mobile-menu div a {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-}
-
-.mobile-menu div a svg {
-    fill: currentColor;
-    width: 20px;
-}
-
-.hidden {
-    transform: translateX(100%);
-}
-
-.no-scroll {
-    overflow: hidden;
-}
-
-@media (max-width: 768px) {
-    .navbar ul {
-        display: none;
-    }
-
-    .hamburger {
-        display: inline-block;
-    }
-
-    .text-lg {
-        font-size: 30px;
-    }
-
-    .text-md {
-        font-size: 18px;
-    }
-
-    .footer {
-        text-align: center;
-    }
-
-    .social {
-        justify-content: center;
-    }
+select { 
+	font-size: 18px;
+	color: #333333;
 }
